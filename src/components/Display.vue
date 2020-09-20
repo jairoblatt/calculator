@@ -7,7 +7,10 @@
 
 <script>
 export default {
-    props: ['value', 'test'],
+    props:{
+      value:Number,
+      test:Array
+    },
     computed:{
       history(){
         let result = this.test.join(' ');

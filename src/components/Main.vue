@@ -15,7 +15,7 @@
           <button class="btn btn-primary" @click="addDigit(1)">1</button>
           <button class="btn btn-primary" @click="addDigit(2)">2</button>
           <button class="btn btn-primary" @click="addDigit(3)">3</button>
-          <button class="btn btn-primary" style="width:100%" @click="addDigit(0)">0</button>
+          <button class="btn btn-primary w-100" @click="addDigit(0)">0</button>
         </div>
 
         <div class="functions">
