@@ -1,0 +1,24 @@
+// Colors
+$primary: #222831;
+$secondary: #ff2e63;
+$white: white;
+$background:#eaeaea;
+
+// FONT 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+$font-default:'Montserrat', sans-serif;
+$display-font:3rem;
+
+// NEUMORPHISM SHADOW
+$elevation-btn: 6px 6px 12px #1a1e25, 
+-6px -6px 12px #2a323d;
+
+$elevation-calculator:5px 5px 10px #858585, 
+-5px -5px 10px #c5c5c5;
+
+$elevation-display:inset 6px 6px 8px #12151a, 
+inset -6px -6px 8px #323b48;
+
+// BORDER
+
+$border-container:5px;

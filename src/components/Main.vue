@@ -6,29 +6,29 @@
 
       <div class="actions">
         <div class="numbers">
-          <button @click="addDigit(7)">7</button>
-          <button @click="addDigit(8)">8</button>
-          <button @click="addDigit(9)">9</button>
-          <button @click="addDigit(4)">4</button>
-          <button @click="addDigit(5)">5</button>
-          <button @click="addDigit(6)">6</button>
-          <button @click="addDigit(1)">1</button>
-          <button @click="addDigit(2)">2</button>
-          <button @click="addDigit(3)">3</button>
-          <button style="width:100%" @click="addDigit(0)">0</button>
+          <button class="btn btn-primary" @click="addDigit(7)">7</button>
+          <button class="btn btn-primary" @click="addDigit(8)">8</button>
+          <button class="btn btn-primary" @click="addDigit(9)">9</button>
+          <button class="btn btn-primary" @click="addDigit(4)">4</button>
+          <button class="btn btn-primary" @click="addDigit(5)">5</button>
+          <button class="btn btn-primary" @click="addDigit(6)">6</button>
+          <button class="btn btn-primary" @click="addDigit(1)">1</button>
+          <button class="btn btn-primary" @click="addDigit(2)">2</button>
+          <button class="btn btn-primary" @click="addDigit(3)">3</button>
+          <button class="btn btn-primary" style="width:100%" @click="addDigit(0)">0</button>
         </div>
 
         <div class="functions">
-          <button @click="setOperation('+')">+</button>
-          <button @click="setOperation('-')">-</button>
-          <button @click="setOperation('*')">*</button>
-          <button @click="setOperation('/')">/</button>
+          <button class="btn"  @click="setOperation('+')">+</button>
+          <button class="btn" @click="setOperation('-')">-</button>
+          <button class="btn" @click="setOperation('*')">*</button>
+          <button class="btn" @click="setOperation('/')">/</button>
         </div>
 
         <div class="know">
-          <button @click="clearMemory()">AC</button>
-          <button @click="addDigit('.')">.</button>
-          <button class="spot" @click="setOperation('=')">=</button>
+          <button class="btn" @click="clearMemory()">AC</button>
+          <button class="btn" @click="addDigit('.')">.</button>
+          <button class="btn btn-spot" @click="setOperation('=')">=</button>
         </div>
       </div>
 
@@ -107,5 +107,3 @@ export default {
   },
 };
 </script>
-
-<style src="../assets/scss/style.css"></style>

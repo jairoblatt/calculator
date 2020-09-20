@@ -1,0 +1,115 @@
+@import './_variables';
+@import './_buttons';
+@import './_mixins';
+
+html,
+body,
+#app{
+    @include size(100%, 100vh);
+    box-sizing: border-box;
+    font-family: $font-default;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include size(100%);
+    .calculator {
+        width: 400px;
+        position: relative;
+        box-shadow: $elevation-calculator;
+        background: $primary;
+        border-radius: $border-container;
+        padding: 10px;
+    }
+
+    .display {
+        @include size(100%, 150px);
+        position: relative;
+        color: $white;
+        font-size: $display-font;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        box-shadow: $elevation-display;
+
+        span {
+            padding: 10px;
+        }
+        small {
+            position: absolute;
+            right: 20px;
+            bottom: 70px;
+            font-size: 1rem;
+            color: $secondary;
+            transition: all .2s ease-out;
+            margin-left: 5px;
+        }
+
+        .up {
+            bottom: 100px;
+            transition: all .1s ease-in;
+        }
+    }
+
+    .actions {
+        height: calc(100% - 100px);
+        display: grid;
+        grid-template-columns: 75% 1fr;
+        grid-template-areas:
+            'numbers functions'
+            'know know';
+    }
+
+    .calculator h2 {
+        color: $white;
+        padding-left: 20px;
+        font-size: 1.3rem;
+    }
+
+
+    .numbers {
+        grid-area: numbers;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .functions {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        grid-area: functions;
+    }
+
+    .know {
+        grid-area: know;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .calculator-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .calculator-top {
+        svg {
+            @include size(20%, 20px);
+            padding: 2px;
+            fill: white;
+            cursor: pointer;
+            transition-duration: 0.2s;
+
+            &:hover {
+                border-radius: 200px;
+                transition-duration: 0.3s;
+                box-shadow: $elevation-btn;
+            }
+        }
+    }
+}
