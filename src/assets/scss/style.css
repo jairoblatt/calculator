@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root{
+    --primary:  white;
+    --secondary:  #ff2e63;
+    --bg-dark: #222831;
+}
+
+body,
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: #eaeaea;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.calculator{
+    width: 400px;
+    position: relative;
+    box-shadow:  5px 5px 10px #858585, 
+    -5px -5px 10px #c5c5c5;
+    background: var(--bg-dark);
+    border-radius: 5px;
+}
+
+.calculator h2{
+    color: white;
+    padding-left: 20px;
+    font-size: 1.3rem;
+}
+
+.display{
+    width: 100%;
+    position: relative;
+    background: var(--bg-dark);
+    color: var(--primary);
+    font-size: 3rem;
+    height: 150px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    box-shadow: inset 6px 6px 8px #12151a, 
+     inset -6px -6px 8px #323b48;
+    border-radius: 5px 5px 0  0;
+}
+
+.display span{
+    padding: 10px 10px;
+    
+}
+
+.actions{
+    height: calc(100% - 100px);
+    display: grid;
+    padding:25px;
+    grid-template-columns: 75% 1fr;
+    border-radius: 0 0  5px  5px;
+    grid-template-areas: 
+        'numbers functions'
+        'know know'
+    ;
+}
+
+.numbers{
+    grid-area: numbers;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button:focus{
+    outline: none;
+}
+button{
+    padding: 2.0rem;
+    margin: 2px;
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition-duration: 100ms;
+}
+
+.dot{
+    color: var(--primary)!important;
+}
+
+button:hover{
+    transition-duration: 200ms;
+    box-shadow:  6px 6px 12px #1a1e25, 
+     -6px -6px 12px #2a323d;
+}
+
+.numbers button{
+    color: var(--secondary);
+}
+
+
+
+.functions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: functions;
+}
+
+.functions button{
+    color: var(--primary);
+}
+
+.know{
+    grid-area: know;
+    display: flex;
+    justify-content: space-between;
+}
+
+.know .spot{
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+.know .spot:hover{
+   box-shadow: none;
+}
+.know button{
+    color:  var(--primary);
+   
+}
+.calculator-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.calculator-top svg{
+    height: 20px;
+    padding: 2px;
+    width: 20%;
+    fill: white;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.calculator-top svg:hover{
+    border-radius: 200px;
+    transition-duration: 0.3s;
+    box-shadow:  6px 6px 12px #1a1e25, 
+     -6px -6px 12px #2a323d;
+}
+  small{
+    position: absolute;
+    right: 20px;
+    bottom: 70px;
+    font-size: 1rem;
+    color: var(--secondary);
+    transition: all .2s ease-out;
+    margin-left: 5px;
+  }
+
+.up{
+    bottom: 100px;
+    transition: all .1s ease-in;
+}

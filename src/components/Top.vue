@@ -1,0 +1,58 @@
+<template>
+  <div class="calculator-top">
+    <h2>Calculator</h2>
+    <svg>
+      <?xml version="1.0" encoding="iso-8859-1"?>
+      <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+      <svg
+        version="1.1"
+        id="Capa_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 477.867 477.867"
+        style="enable-background:new 0 0 477.867 477.867;"
+        xml:space="preserve"
+      >
+        <g>
+          <g>
+            <circle cx="68.267" cy="238.933" r="68.267" />
+          </g>
+        </g>
+        <g>
+          <g>
+            <circle cx="238.933" cy="238.933" r="68.267" />
+          </g>
+        </g>
+        <g>
+          <g>
+            <circle cx="409.6" cy="238.933" r="68.267" />
+          </g>
+        </g>
+        <g />
+        <g />
+        <g />
+        <g />
+        <g />
+        <g />
+        <g />
+        <g />
+        <g />
+        <g />
+        <g />
+        <g />
+        <g />
+        <g />
+        <g />
+      </svg>
+    </svg>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style>
+</style>
