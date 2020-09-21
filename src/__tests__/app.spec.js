@@ -18,8 +18,4 @@ describe('App', ()=>{
         expect(wrapper.isVueInstance).toBeTruthy();
     });
 
-    test('Nome do componente é = App', ()=>{
-        expect(wrapper.name()).toBe('app');
-    })
-
 })

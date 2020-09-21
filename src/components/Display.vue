@@ -1,22 +1,22 @@
 <template>
   <div class="display">
     <small :class="{ up:history }">{{ history }}</small>
-    <span> {{ value }} </span>
+    <span>{{ value }}</span>
   </div>
 </template>
 
 <script>
 export default {
-    props:{
-      value:Number,
-      test:Array
+  props: {
+    value: [Number, String],
+    test: Array,
+  },
+  computed: {
+    history() {
+      let result = this.test.join(" ");
+      if (this.test.length > 1) return result.replace(/.$/, "=");
+      else return result;
     },
-    computed:{
-      history(){
-        let result = this.test.join(' ');
-         if(this.test.length > 1) return result.replace(/.$/, "=")
-         else return result;
-      }
-    }
-}
+  },
+};
 </script>

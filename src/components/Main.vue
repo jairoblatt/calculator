@@ -6,29 +6,29 @@
 
       <div class="actions">
         <div class="numbers">
-          <button class="btn btn-primary" @click="addDigit(7)">7</button>
-          <button class="btn btn-primary" @click="addDigit(8)">8</button>
-          <button class="btn btn-primary" @click="addDigit(9)">9</button>
-          <button class="btn btn-primary" @click="addDigit(4)">4</button>
-          <button class="btn btn-primary" @click="addDigit(5)">5</button>
-          <button class="btn btn-primary" @click="addDigit(6)">6</button>
-          <button class="btn btn-primary" @click="addDigit(1)">1</button>
-          <button class="btn btn-primary" @click="addDigit(2)">2</button>
-          <button class="btn btn-primary" @click="addDigit(3)">3</button>
-          <button class="btn btn-primary w-100" @click="addDigit(0)">0</button>
+          <v-button primary @click="addDigit(7)">7</v-button>
+          <v-button primary @click="addDigit(8)">8</v-button>
+          <v-button primary @click="addDigit(9)">9</v-button>
+          <v-button primary @click="addDigit(4)">4</v-button>
+          <v-button primary @click="addDigit(5)">5</v-button>
+          <v-button primary @click="addDigit(6)">6</v-button>
+          <v-button primary @click="addDigit(1)">1</v-button>
+          <v-button primary @click="addDigit(2)">2</v-button>
+          <v-button primary @click="addDigit(3)">3</v-button>
+          <v-button primary block @click="addDigit(0)">0</v-button>
         </div>
 
         <div class="functions">
-          <button class="btn"  @click="setOperation('+')">+</button>
-          <button class="btn" @click="setOperation('-')">-</button>
-          <button class="btn" @click="setOperation('*')">*</button>
-          <button class="btn" @click="setOperation('/')">/</button>
+          <v-button @click="setOperation('+')">+</v-button>
+          <v-button @click="setOperation('-')">-</v-button>
+          <v-button @click="setOperation('*')">*</v-button>
+          <v-button @click="setOperation('/')">/</v-button>
         </div>
 
         <div class="know">
-          <button class="btn" @click="clearMemory()">AC</button>
-          <button class="btn" @click="addDigit('.')">.</button>
-          <button class="btn btn-spot" @click="setOperation('=')">=</button>
+          <v-button  @click="clearMemory()">AC</v-button>
+          <v-button  @click="addDigit('.')">.</v-button>
+          <v-button spot @click="setOperation('=')">=</v-button>
         </div>
       </div>
 
@@ -39,9 +39,9 @@
 <script>
 import Display from "../components/Display";
 import Top from '../components/Top'
+import VButton from './VButton'
 export default {
-
-  components:{Display, Top},
+  components:{Display, Top, VButton},
   data: function () {
     return {
       displayValue: "0",
